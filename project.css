@@ -1,0 +1,99 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+  background-color: lightgray;
+}
+
+.flex-container {
+    
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  padding-right: 100px;
+  margin: 80px;
+  text-align: justify;
+  flex-wrap: wrap;
+  
+}
+
+.flex-container > div {
+  flex: 1;
+  
+}
+.flex {
+  background-color: white;
+  box-shadow: 0 4px 2px rgba(113, 102, 102, 0.1);
+  text-align: center;
+  max-width: 250px;
+  margin: 50px;
+}
+.profil {
+  width: 250px;
+  top: 0;
+  text-align: center;
+  height: 250px;
+}
+
+
+.aboutus {
+  width: 30px;
+  
+  padding-top: 20px;
+  display: inline-block;
+  margin: 10px 8px 0 8px;
+  justify-content: center;
+}
+
+.tombol {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+  border-radius: 20px;
+  
+}
+.tombol:hover{
+  background-color: white;
+  color: black;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}a:hover{
+  color: blue;
+}
+
+@media (max-width: 900px){
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    width: auto;
+  } .tombol{
+    margin-right:100%;
+  }
+  .profil{
+    position: static;
+    margin-top: 20px;
+    width: auto;
+  }
+  .flex{
+    margin-top: 30px;
+  }
+  .aboutus{
+    justify-content: center;
+    
+  }
+ 
+  
+  
+}
